@@ -1,0 +1,38 @@
+/* Css Cho kich ban 1 */
+.body {
+  /* background: #333; */
+}
+.main {
+  max-width: 1324px;
+  margin: auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+}
+.formChat {
+  height: 85vh;
+  width: 75%;
+  overflow-y: scroll;
+}
+.text:nth-child(odd) {
+  background-color: #333;
+  color: #fff;
+  width: 50%;
+}
+.form {
+}
+.btn {
+  padding: 5px 10px;
+  background: green;
+  border: transparent;
+  border-radius: 20px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
