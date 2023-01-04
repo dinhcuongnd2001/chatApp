@@ -1,8 +1,3 @@
-<?php
-    if(!isset($_SESSION['StoreCase2'])) {
-        $_SESSION['StoreCase2'] = ["Xin chào, Hãy nhập vào biểu hiện của trẻ để được đưa ra những giải pháp tham khảo cho bé"];
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -11,7 +11,6 @@ class KichBan1
         require('./view/KichBan11.php');
     } 
 
-    
     public function handleInfo(){
         include("./model/ChildrenInfo.php");
         require('./model/ObjectInfo.php');
@@ -50,6 +49,7 @@ class KichBan1
 
             require('./model/ReponseCase1.php');
             require('./view/KichBan11.php');
+            // header(l)
         }
     }
 }

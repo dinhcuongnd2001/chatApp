@@ -1,3 +1,8 @@
+<?php 
+    if(isset($_GET['res'])) {
+        $res = $_GET['res'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,28 +25,32 @@
 
                 <div class="form-group">
                     <label for="gender" class="form-label">Giới tính</label>
-                    <input value="<?php if(isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][0] ?>"
+                    <input
+                        value="<?php if(isset($_GET['res']) && isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][0] ?>"
                         id="gender" name="gender" type="text" placeholder="Nam/Nữ" class="form-control">
                     <span class="form-message"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="month" class="form-label">Tháng tuổi</label>
-                    <input value="<?php if(isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][1] ?>"
+                    <input
+                        value="<?php if(isset($_GET['res']) && isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][1] ?>"
                         id="month" name="month" type="text" placeholder="VD: 36" class="form-control">
                     <span class="form-message"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="weight" class="form-label">Cân nặng</label>
-                    <input value="<?php if(isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][2] ?>"
+                    <input
+                        value="<?php if(isset($_GET['res']) && isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][2] ?>"
                         id="weight" name="weight" type="text" placeholder="Kg" class="form-control">
                     <span class="form-message"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="high" class="form-label">Chiều cao</label>
-                    <input value="<?php if(isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][3] ?>"
+                    <input
+                        value="<?php if(isset($_GET['res']) && isset($_SESSION['StoreCase1'][0])) echo $_SESSION['StoreCase1'][3] ?>"
                         id="high" name="high" placeholder="Cm" type="text" class="form-control">
                     <span class="form-message"></span>
                 </div>
