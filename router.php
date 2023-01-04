@@ -14,8 +14,7 @@ switch ($kichBan) {
                 (new KichBan1())->index();
                 break;
             case "guiThongTin":
-                $info = $_POST['info'];
-                (new KichBan1())->handleInfo($info);
+                (new KichBan1())->handleInfo();
                 break;
             default:
                 echo("Hanh Dong Khong hop le");

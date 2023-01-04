@@ -63,4 +63,4 @@ require('./model/HandleLipid.php');
 $traLoi .=  "- Năng lượng cho chất béo là: $nangLuongchoChatBeo Kcal :</br> $nhuCauBeo" ;
 require('./model/HandleStarch.php');
 $traLoi .= "- Năng lượng cho tinh bột là: $nangLuongChoTinhBot Kcal :</br> $nhuCauTinhBot";
-$_SESSION['StoreCase1'][] = $traLoi;
+// $_SESSION['StoreCase1'][] = $traLoi;
