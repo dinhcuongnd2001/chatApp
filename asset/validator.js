@@ -1,6 +1,8 @@
 function Validator(options) {
   var selectorRules = {};
+  // lấy form để thông báo lỗi;
   var formElement = document.querySelector(options.form);
+
   function validate(inputElement, rule) {
     var errorElement =
       inputElement.parentElement.querySelector(".form-message");
@@ -86,6 +88,8 @@ function Validator(options) {
   }
 }
 
+// các rule
+
 Validator.checkGender = function (selector, message) {
   return {
     selector: selector,
@@ -108,7 +112,7 @@ Validator.isRequired = function (selector, message) {
   };
 };
 
-Validator.isNumber = function (selector, message) {
+Validator.isMonth = function (selector, message) {
   return {
     selector: selector,
     test: function (value) {

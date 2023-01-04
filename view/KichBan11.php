@@ -60,7 +60,7 @@
 
         </div>
         <div class="response">
-            <h3 class="heading">Thông Tin của hệ thống</h3>
+            <h3 class="heading">Thông tin dinh dưỡng</h3>
             <?php if(isset($traLoi)){ ?>
             <p class="desc"><?php echo($traLoi) ?></p>
             <?php }?>
@@ -75,7 +75,7 @@
             Validator.isRequired('#gender', 'Không để trống trường này'),
             Validator.checkGender('#gender', "Giá trị bắt buộc phải là Nam hoặc Nữ"),
             Validator.isRequired('#month', 'Không để trống trường này'),
-            Validator.isNumber("#month"),
+            Validator.isMonth("#month"),
             Validator.isRequired('#weight'),
             Validator.isWeight('#weight'),
             Validator.isRequired('#high'),

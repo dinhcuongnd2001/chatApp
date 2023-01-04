@@ -25,7 +25,7 @@ class KichBan1
         // Kiểm tra thể trạng của trẻ:
         $sql = "select * from thongtincoban where gioiTinh like '%$gender%' and tuoi = '$month'";
         $result = mysqli_fetch_array((new Connect)->select($sql)); 
-        // Luu thong tin chuan cua tre theo dung gioit tinh va tuoi
+        // Luu thong tin chuan cua tre theo dung gioi tinh va tháng tuoi
         if(isset($result)){
             if($current_BMI <= $result['BMI_SDD3']) {
                 $children->setTheTrang("SDD3");

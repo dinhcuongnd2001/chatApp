@@ -5,5 +5,3 @@ class Controller {
         require './view/KichBan11.php';
     }
 }
-
-// Nam, 36, 11.3, 103.5
