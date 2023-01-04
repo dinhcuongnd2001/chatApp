@@ -33,6 +33,7 @@ switch ($kichBan) {
             default:
                 echo("Hanh Dong Khong Hop Le");
         }
+        break;
     default:
         echo("Kich Ban Khong hop le");
 }

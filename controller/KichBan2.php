@@ -11,8 +11,16 @@ class kichBan2
         require('./view/KichBan2.php');
     }
     public function handleInfo($info){
-        $_SESSION['StoreCase2'][] = $info;
-        require('./model/ResponseCase2.php');
+        if($info == '') {
+            $_SESSION['StoreCase2'][] = "...";
+            $traLoi = "Thông tin nhập vào đang bị trống, anh chị nhập lại thông tin để hệ thống
+            đưa ra kết quả chính xác nhất.";
+            $_SESSION['StoreCase2'][] = $traLoi;
+        }
+        else {
+            $_SESSION['StoreCase2'][] = $info;
+            require('./model/ResponseCase2.php');
+        }
         require('./view/KichBan2.php');
     }
 }

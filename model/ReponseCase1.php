@@ -17,7 +17,7 @@ foreach($nhuCauNangLuong as $each){
         $nangLuong = $nangLuongTheoMoiThang*$thangTuoi;
         // Xử lý thông tin năng lượng
         // tùy theo thể trạng nên mức năng lượng của các trẻ sẽ khác nhau.
-        // Nếu thể trạng của trẻ ở mức sdd3: thì năng lượng tăng lên 1.3 theo mức chuẩn,
+        // Nếu thể trạng của trẻ ở mức SDD3: thì năng lượng tăng lên 1.3 theo mức chuẩn,
         // Tương tự SDD2: năng lượng tăng 1.2
         // Tương tự SDD1: Năng lượng tăng 1.1
         // Mức trung bình giữ nguyên
