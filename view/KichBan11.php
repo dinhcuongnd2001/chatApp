@@ -16,6 +16,17 @@
 
 <body>
     <div class="content">
+        <div class="nav">
+            <p class="select">Bạn muốn tư vấn về</p>
+            <ul>
+                <li class="btn-select">
+                    <a href="?kichBan=kichBan1">Chế độ dinh dưỡng</a>
+                </li>
+                <li class="btn-select">
+                    <a href="?kichBan=kichBan2">Biểu hiện bệnh</a>
+                </li>
+            </ul>
+        </div>
         <div class="main">
             <form action="./?kichBan=kichBan1&action=guiThongTin" method="POST" class="form" id="form-1">
                 <h3 class="heading">Tư vấn dinh dưỡng</h3>

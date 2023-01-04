@@ -28,11 +28,13 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
+
 .nav {
   position: absolute;
   left: 90px;
   top: 35px;
 }
+
 .select {
   font-size: 20px;
   font-weight: 600;

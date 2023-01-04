@@ -2,17 +2,48 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 html {
   color: #333;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
 }
+a {
+  font-size: 16px;
+  color: #333;
+}
 .content {
   background: #f1f1f1;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.nav {
+  position: absolute;
+  left: 90px;
+  top: 35px;
+}
+.select {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-select {
+  background-color: #e4e6eb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.btn-select:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 .main {
   display: flex;
